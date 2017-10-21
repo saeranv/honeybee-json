@@ -33,8 +33,8 @@ This is what Honeybee needs to create the analysis and execute it!
 ```js
 {"name": "",
 "vertices": [
-    [(x, y, z), (x1, y1, z1), (x2, y2, z2)],
-    [(x, y, z), (x1, y1, z1), (x2, y2, z2), (x3, y3, z3)], ...],
+    [[x, y, z], [x1, y1, z1], [x2, y2, z2]],
+    [[x, y, z], [x1, y1, z1], [x2, y2, z2], [x3, y3, z3]], ...],
 "surface_type": null  // 0: wall, 5: window
 }
 ```
@@ -69,8 +69,8 @@ This is what Honeybee needs to create the analysis and execute it!
 ### AnalysisPoint
 ```js
 {
-  "location": (x, y, z),
-  "direction": (a, b, c)
+  "location": [x, y, z],
+  "direction": [a, b, c]
 },
 ```
 
@@ -78,9 +78,9 @@ This is what Honeybee needs to create the analysis and execute it!
 ```js
 {
   "analysis_points": [
-    {"location": (x, y, z), "direction": (a, b, c)},
-    {"location": (x, y, z), "direction": (a, b, c)},
-    {"location": (x, y, z), "direction": (a, b, c)},
+    {"location": [x, y, z], "direction": [a, b, c]},
+    {"location": [x, y, z], "direction": [a, b, c]},
+    {"location": [x, y, z], "direction": [a, b, c]},
     // ...
   ]
 }
