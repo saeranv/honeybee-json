@@ -47,6 +47,7 @@ This is what Honeybee needs to create the analysis and execute it!
   "day": 1, // an integer between 1-31
   "month": 1, // an integer between 1-12
   "hour": 12.0, // a float number between 0-23
+  "north": 0, // degree for north if not Y axis
   "sky_type": 0 // A number between 0-5 --  0: sunny sky
 }
 ```
