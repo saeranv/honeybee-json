@@ -10,6 +10,7 @@ This is what Honeybee needs to create the analysis and execute it!
 ### SolarAccessRecipeGridBased
 ```js
 {
+  "id": 0, // do NOT overwrite this id
   "hoys": [], // list of hours of the year
   "surfaces": [], // list of honeybee surfaces
   "analysis_grids": [] // list of analysis grids
@@ -19,6 +20,7 @@ This is what Honeybee needs to create the analysis and execute it!
 ### PointInTimeGridBased
 ```js
 {
+  "id": 1, // do NOT overwrite this id
   "sky": null, // a honeybee sky
   "surfaces": [], // list of honeybee surfaces
   "analysis_grids": [] // list of analysis grids
