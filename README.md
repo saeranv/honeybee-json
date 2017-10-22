@@ -11,6 +11,7 @@ This is what Honeybee needs to create the analysis and execute it!
 ```js
 {
   "id": 0, // do NOT overwrite this id
+  "location": null, // a honeybee location - see below
   "hoys": [], // list of hours of the year
   "surfaces": [], // list of honeybee surfaces
   "analysis_grids": [] // list of analysis grids
