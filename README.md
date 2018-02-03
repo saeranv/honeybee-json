@@ -1,4 +1,4 @@
-# honeybee-js
+# honeybee-json
 Honeybee JSON schema
 
 This is the schema for minimum implementation of honeybee objects.
@@ -70,18 +70,22 @@ This is what Honeybee needs to create the analysis and execute it!
 ### AnalysisPoint
 ```js
 {
-  "location": [x, y, z],
-  "direction": [a, b, c]
+  "grid_id": int,
+  "id_local": int,  // unique id in points in analysis grid.
+  "id_global": int,  // unique id in all points in recipe.
+  "location": {"x": x, "y": y, "z": z},
+  "direction": {"x": a, "y": b, "z": c}
 },
 ```
 
 ### AnalysisGrid
 ```js
 {
+  "id": int,
   "analysis_points": [
-    {"location": [x, y, z], "direction": [a, b, c]},
-    {"location": [x, y, z], "direction": [a, b, c]},
-    {"location": [x, y, z], "direction": [a, b, c]},
+    {"location": {"x": x, "y": y, "z": z}, "direction": {"x": a, "y": b, "z": c}},
+    {"location": {"x": x, "y": y, "z": z}, "direction": {"x": a, "y": b, "z": c}},
+    {"location": {"x": x, "y": y, "z": z}, "direction": {"x": a, "y": b, "z": c}},
     // ...
   ]
 }
